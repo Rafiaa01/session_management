@@ -47,4 +47,4 @@ A FastAPI application integrated with OpenAI that maintains conversation history
 | POST | `/sessions/{session_id}/messages` | Send a message and receive an AI reply |
 | GET | `/sessions/{session_id}` | Retrieve session history |
 | GET | `/sessions` | Retrieve all sessions |
-
+| DELETE|`/sessions/{session_id}`| Delete the specific session id history|
