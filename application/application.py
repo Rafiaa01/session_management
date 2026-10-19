@@ -1,13 +1,13 @@
 
-from fastapi import FastAPI
-from pydantic import BaseModel
-from session_service import (
+from application.session_service import (
     create_session,
     delete_session,
     get_all_sessions,
     get_session,
     send_message,
 )
+from fastapi import FastAPI
+from pydantic import BaseModel
 
 application = FastAPI(title="Session Management API")
 

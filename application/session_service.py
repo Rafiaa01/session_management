@@ -1,14 +1,14 @@
 
-from config import MODEL, client
-from fastapi import HTTPException
-from openai import OpenAIError
-from session_manager import (
+from application.config import MODEL, client
+from application.session_manager import (
     get_or_create_session,
     load_sessions,
     save_session_history,
     save_sessions,
 )
-from systemprompt import SYSTEM_PROMPT
+from application.systemprompt import SYSTEM_PROMPT
+from fastapi import HTTPException
+from openai import OpenAIError
 
 
 def create_session(session_id: str | None = None):
